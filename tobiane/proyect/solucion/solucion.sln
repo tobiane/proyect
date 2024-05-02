@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio10", "Ejercicio10\Ejercicio10.csproj", "{04915A69-611B-43D6-9ECF-4B1839C7CCAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copos", "copos\copos.csproj", "{37B13477-718D-4AEE-BB76-CB72676D285A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04915A69-611B-43D6-9ECF-4B1839C7CCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04915A69-611B-43D6-9ECF-4B1839C7CCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04915A69-611B-43D6-9ECF-4B1839C7CCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04915A69-611B-43D6-9ECF-4B1839C7CCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B13477-718D-4AEE-BB76-CB72676D285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B13477-718D-4AEE-BB76-CB72676D285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B13477-718D-4AEE-BB76-CB72676D285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B13477-718D-4AEE-BB76-CB72676D285A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4C932A73-8F2B-44F1-AECF-32672FDC6C45}
+		SolutionGuid = {DD51C1E8-57B8-470D-B432-DAEBFE11D739}
 	EndGlobalSection
 EndGlobal

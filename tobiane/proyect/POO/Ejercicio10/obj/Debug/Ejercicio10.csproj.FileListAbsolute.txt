@@ -1,8 +1,0 @@
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\bin\Debug\Ejercicio10.exe.config
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\bin\Debug\Ejercicio10.exe
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\bin\Debug\Ejercicio10.pdb
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\obj\Debug\Ejercicio10.csproj.AssemblyReference.cache
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\obj\Debug\Ejercicio10.csproj.SuggestedBindingRedirects.cache
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\obj\Debug\Ejercicio10.csproj.CoreCompileInputs.cache
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\obj\Debug\Ejercicio10.exe
-C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\POO\Ejercicio10\obj\Debug\Ejercicio10.pdb

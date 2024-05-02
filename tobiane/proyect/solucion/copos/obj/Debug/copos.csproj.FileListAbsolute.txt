@@ -1,0 +1,8 @@
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\bin\Debug\copos.exe.config
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\bin\Debug\copos.exe
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\bin\Debug\copos.pdb
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\obj\Debug\copos.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\obj\Debug\copos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\obj\Debug\copos.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\obj\Debug\copos.exe
+C:\Users\Alumno\Documents\GitHub\proyect\tobiane\proyect\solucion\copos\obj\Debug\copos.pdb
