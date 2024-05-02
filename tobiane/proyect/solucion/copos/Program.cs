@@ -37,7 +37,7 @@ namespace copos
         static bool bajar(Copo c)
         {
             bool estado = false;
-            if (c.fila < 30)
+            if (c.fila < 10)
                 estado = true;
 
             foreach (Copo co in copos)
@@ -84,6 +84,14 @@ namespace copos
                             Console.Write("*");
                         }
                         h1 = h2;
+                    }
+                }
+                foreach (Copo copo in copos)
+                {
+                    if(copo.fila == 10)
+                    {
+                        Console.SetCursorPosition(copo.col, copo.fila);
+                        copo.fila--;
                     }
                 }
             }
