@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.Collections.Generic;
-//using System.IO;
-//using System.Linq;
-//using System.Security.Cryptography;
-//using System.Text;
-//using System.Threading;
-//using System.Threading.Tasks;
-
+using System.Threading;
 
 namespace copos
 {
@@ -24,20 +17,17 @@ namespace copos
         }
     }
 
-
     internal class Program
     {
         static TimeSpan transcurso;
         static DateTime h1 = DateTime.Now;
-        static DateTime h2 = DateTime.Now;
-        static int fila = 0;
-        static int columna = 0;
         static List<Copo> copos = new List<Copo>();
+        static Random r = new Random();
 
-        static bool bajar(Copo c)
+        static bool Bajar(Copo c)
         {
             bool estado = false;
-            if (c.fila < 10)
+            if (c.fila < Console.WindowHeight - 1) // Consideramos el tamaño de la ventana de la consola
                 estado = true;
 
             foreach (Copo co in copos)
@@ -45,55 +35,53 @@ namespace copos
                 if (c.col == co.col && c.fila + 1 == co.fila)
                 {
                     estado = false;
+                    break; // Salir del bucle una vez que se encuentre un obstáculo
                 }
             }
-
-
             return estado;
         }
 
         static void Main(string[] args)
         {
-            Copo a1;
-            Random r = new Random();
-            columna = r.Next(1, 50);
             Console.CursorVisible = false;
-
-            a1 = new Copo(r.Next(1, 40), 1);
-            copos.Add(a1);
 
             while (true)
             {
-                h2 = DateTime.Now;
+                DateTime h2 = DateTime.Now;
                 transcurso = h2 - h1;
 
-
-                if (transcurso.Milliseconds > 300)
+                if (transcurso.Milliseconds > 10)
                 {
-                    a1 = new Copo(r.Next(1, 40), 1);
-                    copos.Add(a1);
+                    // Creamos un nuevo copo aleatorio
+                    Copo nuevoCopo = new Copo(r.Next(1, Console.WindowWidth - 1), 1);
+                    if (Bajar(nuevoCopo))
+                        copos.Add(nuevoCopo);
 
+                    // Limpiamos la pantalla
+                    Console.Clear();
+
+                    // Dibujamos todos los copos
                     foreach (Copo copo in copos)
                     {
-                        if (bajar(copo))
+                        Console.SetCursorPosition(copo.col, copo.fila);
+                        Console.Write("*");
+                    }
+
+                    // Esperamos un poco antes de la siguiente iteración
+                    Thread.Sleep(100);
+
+                    // Actualizamos la posición de los copos
+                    foreach (Copo copo in copos)
+                    {
+                        if (Bajar(copo))
                         {
                             Console.SetCursorPosition(copo.col, copo.fila);
                             Console.Write(" ");
                             copo.fila++;
-                            Console.SetCursorPosition(copo.col, copo.fila);
-                            Console.Write("*");
                         }
-                        h1 = h2;
                     }
+                    h1 = h2;
                 }
-                for (int i = copos.Count - 1; i < copos.Count; i++)
-                {
-                    if (copos[i].fila == 10)
-                    {
-                        copos.RemoveAt(i);
-                    }
-                }
-
             }
         }
     }
