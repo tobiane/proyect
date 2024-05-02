@@ -68,7 +68,7 @@ namespace copos
                 transcurso = h2 - h1;
 
 
-                if (transcurso.Milliseconds > 500)
+                if (transcurso.Milliseconds > 300)
                 {
                     a1 = new Copo(r.Next(1, 40), 1);
                     copos.Add(a1);
@@ -86,14 +86,14 @@ namespace copos
                         h1 = h2;
                     }
                 }
-                foreach (Copo copo in copos)
+                for (int i = copos.Count - 1; i < copos.Count; i++)
                 {
-                    if(copo.fila == 10)
+                    if (copos[i].fila == 10)
                     {
-                        Console.SetCursorPosition(copo.col, copo.fila);
-                        copo.fila--;
+                        copos.RemoveAt(i);
                     }
                 }
+
             }
         }
     }
